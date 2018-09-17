@@ -2,9 +2,16 @@
 
 int main(){
   unsigned int x = 3000000000;
-  int * i = &x;
+  //int * i = &x;
   char * c = &x;
-  printf("%x\n%x\n%x\n%x\n%x\n",*i,*c,*++c,*++c,*++c);
-  //printf("%hhx\n",p);
+  printf("%x  \n",x);
+  /* for(int i = 0;i < 4;i++){ */
+  /*   printf("%hhx  \n",*c); */
+  /*   c++; */
+  /* } */
+  for(int i = 0;i < 4;i++){
+    printf("%hhx  \n",*c);
+    c += 16;
+  }
   return 0;
 }
